@@ -13,6 +13,6 @@ app.use(express.json());
 app.use("/", routes);
 
 //escuchar peticiones
-app.listen(process.env.PORT || 4000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Servidor corriento en el puerto 4000");
 });
