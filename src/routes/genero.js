@@ -9,12 +9,12 @@ const {validarJWTAdmin, validarJWTUser} = require ("../middleware/validarJWT")
 
 
 router.get('/', async (req,res)=>{
-  const resp= await Genero.find({},{"genero":1,"_id":0})    
+  /* const resp= await Genero.find({},{"genero":1,"_id":0})    
 
   const arrayGeneros=resp.map(e=>e.genero)
 
-  res.status(200).send(arrayGeneros)
-
+  res.status(200).send(arrayGeneros) */
+  res.status(200).send({msg:"hola"})
   /* mongoose.connection.close(); */
 });
 
